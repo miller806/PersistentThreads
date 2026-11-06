@@ -1,0 +1,142 @@
+/*
+ * Vencord, a Discord client mod
+ * Copyright (c) 2026 Vendicated and contributors
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ */
+
+.vc-persistent-threads-manage {
+    margin-bottom: 16px;
+}
+
+.vc-persistent-threads-manage-title {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin: 0 0 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--header-primary, #f2f3f5);
+}
+
+.vc-persistent-threads-header-icon {
+    flex: 0 0 auto;
+    opacity: 0.9;
+}
+
+.vc-persistent-threads-header-count {
+    flex: 0 0 auto;
+    padding: 0 6px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-muted, #949ba4);
+    background: var(--background-modifier-accent, rgb(255 255 255 / 6%));
+    border-radius: 8px;
+}
+
+.vc-persistent-threads-manage-hint {
+    margin: 0 0 12px;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--text-muted, #949ba4);
+}
+
+.vc-persistent-threads-manage-empty {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-muted, #949ba4);
+}
+
+.vc-persistent-threads-manage-list {
+    display: flex;
+    flex-direction: column;
+    max-height: 240px;
+    overflow-y: auto;
+    border: 1px solid var(--background-modifier-accent, rgb(255 255 255 / 6%));
+    border-radius: 8px;
+}
+
+.vc-persistent-threads-manage-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: var(--text-normal, #dbdee1);
+    border-bottom: 1px solid var(--background-modifier-accent, rgb(255 255 255 / 6%));
+}
+
+.vc-persistent-threads-manage-row:last-child {
+    border-bottom: none;
+}
+
+.vc-persistent-threads-manage-row.vc-persistent-threads-row-missing {
+    color: var(--text-danger, #f23f43);
+}
+
+.vc-persistent-threads-manage-row-name {
+    flex: 1 1 auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-persistent-threads-manage-row-parent,
+.vc-persistent-threads-manage-row-guild {
+    flex: 0 1 auto;
+    overflow: hidden;
+    font-size: 12px;
+    color: var(--text-muted, #949ba4);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.vc-persistent-threads-manage-remove {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    color: var(--interactive-normal, #b5bac1);
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.vc-persistent-threads-manage-remove:hover {
+    color: var(--text-danger, #f23f43);
+    background: var(--background-modifier-hover, rgb(78 80 88 / 32%));
+}
+
+.vc-persistent-threads-manage-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.vc-persistent-threads-manage-button {
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text-normal, #dbdee1);
+    background: var(--background-secondary-alt, #2b2d31);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.vc-persistent-threads-manage-button:hover:not(:disabled) {
+    background: var(--background-modifier-hover, rgb(78 80 88 / 32%));
+}
+
+.vc-persistent-threads-manage-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.vc-persistent-threads-manage-button-danger:hover:not(:disabled) {
+    color: var(--text-on-danger, #fff);
+    background: var(--status-danger, #f23f43);
+}

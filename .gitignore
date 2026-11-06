@@ -1,0 +1,7 @@
+# headless UI harness
+tests/harness/node_modules/
+tests/harness/build/
+tests/harness/package-lock.json
+
+# generated installable archive + synced sources
+dist/

@@ -1,0 +1,15 @@
+{
+    "name": "persistent-threads-harness",
+    "private": true,
+    "type": "module",
+    "description": "Headless UI harness for the PersistentThreads Equicord plugin (mocked Discord modules + jsdom)",
+    "scripts": {
+        "test": "node run.mjs"
+    },
+    "devDependencies": {
+        "esbuild": "^0.28.2",
+        "jsdom": "^27.0.0",
+        "react": "^19.2.0",
+        "react-dom": "^19.2.0"
+    }
+}
